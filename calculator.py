@@ -1,17 +1,17 @@
 def calculator(number1, number2, operator):
-    """
-    Calculates an equation
-
-    This function takes in an operation in the form of the parameters, calculates it, and returns the output
-
-    Parameters
-    ----------
-    number1 : float
-           the number on the left side of the operator
-    number2 : float
-           the number on the right side of the operator
-    operator : string
-            the operator to be used to calculation
+	"""
+	Calculates an equation
+	
+	This function takes in an operation in the form of the parameters, calculates it, and returns the output
+	
+	Parameters
+	----------
+	number1 : float
+		the number on the left side of the operator
+	number2 : float
+		the number on the right side of the operator
+	operator : string
+	the operator to be used to calculation
 
     returns
     -------
@@ -25,25 +25,25 @@ def calculator(number1, number2, operator):
     >>> calculator(4, 3, '-')
     1
     """
-    try:
-        numb1 = float(number1)
-        numb2 = float(number2)
-        if operator  == "+":
-             return numb1 + numb2
-        elif operator ==  '-':
-             return numb1 - numb2
-        elif operator == '*':
-             return numb1 * numb2
-        elif operator == '/':
-             return numb1 / numb2
-        elif operator == '//':
-             return numb1 // numb2
-        elif operator == '**':
-             return numb1 ** numb2
-        else:
-             return False
-    except ValueError:
-        return False
+	try:
+		numb1 = float(number1)
+		numb2 = float(number2)
+		if operator  == "+":
+			return numb1 + numb2
+		elif operator ==  '-':
+			return numb1 - numb2
+		elif operator == '*':
+			return numb1 * numb2
+		elif operator == '/':
+			return numb1 / numb2
+		elif operator == '//':
+			return numb1 // numb2
+		elif operator == '**':
+			return numb1 ** numb2
+		else:
+			return False
+	except ValueError:
+			return False
 def parse_input():
 	"""
 	Parses and passes user input into function calculator

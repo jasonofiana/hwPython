@@ -22,7 +22,7 @@ def tripler(func):
 	Hello	
 	Hello
 	"""
-        def wrapper(*args, **kwargs):
-            return func(*args, **kwargs) + " \n" + func(*args, **kwargs) + " \n" + func(*args, **kwargs) 
-        return wrapper
+	def wrapper(*args, **kwargs):
+		return func(*args, **kwargs) + " \n" + func(*args, **kwargs) + " \n" + func(*args, **kwargs) 
+	return wrapper
 
