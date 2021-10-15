@@ -35,6 +35,8 @@ def calculator(number1, number2, operator):
 		elif operator == '*':
 			return numb1 * numb2
 		elif operator == '/':
+			if numb2 == 0:
+				return 0
 			return numb1 / numb2
 		elif operator == '//':
 			return numb1 // numb2
