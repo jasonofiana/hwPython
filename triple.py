@@ -22,9 +22,9 @@ def tripler(func):
 	Hello	
 	Hello
 	"""
-	def wrapper():
-		func()
-		func()
-		func()
+	def wrapper(*args, **kwargs):
+		func(*args, **kwargs)
+		func(*args, **kwargs)
+		func(*args, **kwargs)
 	wrapper()
 
