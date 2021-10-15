@@ -67,8 +67,10 @@ def parse_input():
 	Enter equation: (user input)12 * 4.2
 	50.400000000000006
 	"""
-	inp = input("Enter equation: ")
-	arr = inp.split()
-	print(calculator(arr[0], arr[2], arr[1]))
-
+	try:
+		inp = input("Enter equation: ")
+		arr = inp.split()
+		print(calculator(arr[0], arr[2], arr[1]))
+	except:
+		pass
 parse_input()
