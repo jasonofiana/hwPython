@@ -26,5 +26,5 @@ def tripler(func):
 		func(*args, **kwargs)
 		func(*args, **kwargs)
 		func(*args, **kwargs)
-	wrapper()
+	return wrapper
 
